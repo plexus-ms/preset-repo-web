@@ -7,18 +7,18 @@ hooks {
     steps {
       ["lint"] {
         glob = List("**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.css", "**/*.json")
-        check = "mise lint {{ files }}"
-        fix = "mise lint --write {{ files }}"
+        check = "mise run lint {{ files }}"
+        fix = "mise run lint --write {{ files }}"
       }
     }
   }
   ["pre-push"] {
     steps {
       ["check"] {
-        check = "mise check"
+        check = "mise run check"
       }
       ["test"] {
-        check = "mise test"
+        check = "mise run test"
       }
     }
   }

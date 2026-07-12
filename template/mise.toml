@@ -40,7 +40,7 @@ run = 'turbo run build ${usage_app:+--filter=$usage_app}'
 
 [tasks.sync]
 description = "Update the project to the latest template version with Copier"
-run = "copier update"
+run = "copier update --trust"
 
 # Internal / hidden tasks
 

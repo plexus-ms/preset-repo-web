@@ -1,5 +1,8 @@
 _subdirectory: template
 
+_tasks:
+  - "git init"
+
 tenant:
   type: str
   help: "Tenant slug (URL-friendly)"

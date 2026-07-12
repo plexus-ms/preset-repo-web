@@ -1,0 +1,6 @@
+_subdirectory: template
+
+tenant:
+  type: str
+  help: "Tenant slug (URL-friendly)"
+  placeholder: "acme-corp"

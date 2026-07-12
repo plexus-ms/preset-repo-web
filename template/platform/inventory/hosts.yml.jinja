@@ -1,0 +1,6 @@
+all:
+  children:
+    {{ tenant }}:
+      hosts:
+        host01.{{ tenant }}.example:
+          ansible_user: root

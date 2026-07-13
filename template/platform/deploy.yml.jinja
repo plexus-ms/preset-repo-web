@@ -1,0 +1,13 @@
+---
+# Configuration pass for the {{ tenant }} operations platform — ingress
+# routes, app directories, secrets, container bring-up. Safe to re-run often;
+# assumes provision.yml has already run on the host.
+#
+#   mise platform deploy
+#
+- name: Deploy the {{ tenant }} operations platform configuration
+  hosts: {{ tenant }}
+  become: true
+  roles:
+    - plexus.platform.ingress
+    - plexus.platform.deploy

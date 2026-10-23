@@ -1,6 +1,6 @@
 {% raw %}name: ci
 
-# Path-aware CI (§ 8.2 PLX). `changes` runs the changed-apps verb and emits a
+# Path-aware CI (§ 2 PLX-Train). `changes` runs the changed-apps verb and emits a
 # JSON matrix; `app` fans the per-app pipeline (check → test → build → deploy)
 # over exactly the apps whose sources changed — a docs-only push deploys nothing,
 # a shared-package change redeploys its dependents. Managed by copier: edit the

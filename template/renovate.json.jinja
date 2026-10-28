@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>plexus-ms/renovate-config"]{% if renovate_reviewers %},
+  "reviewers": [{% for r in renovate_reviewers.split(',') %}"{{ r.strip() }}"{% if not loop.last %}, {% endif %}{% endfor %}],
+  "assignAutomerge": true{% endif %}
+}

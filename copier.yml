@@ -12,5 +12,5 @@ tenant:
 
 renovate_reviewers:
   type: str
-  help: "GitHub logins the update bot requests a review from on every PR, comma-separated (empty: none); the bot's automerged tier included, so they show on the reviewer's dashboard"
+  help: "GitHub logins the update bot requests a review from on the PRs that wait for a human, comma-separated (empty: none); a PR the bot merges itself asks nobody unless its checks fail"
   default: ""

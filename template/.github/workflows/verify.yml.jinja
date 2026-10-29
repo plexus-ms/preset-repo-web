@@ -10,6 +10,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
 # Where the jobs run (repo variables): CI_RUNNER is the runner label, unset
 # for GitHub's runners; CI_RUNNER_PERSISTENT is `true` when that runner keeps
 # its disk between jobs, so caches stay local. Unset both to be back on
